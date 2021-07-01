@@ -312,6 +312,10 @@
       "baseline": "12.0.0",
       "port-version": 0
     },
+    "azure-template-cpp": {
+      "baseline": "1.0.0-beta.980292",
+      "port-version": 0
+    },
     "azure-uamqp-c": {
       "baseline": "2020-12-09",
       "port-version": 0
@@ -3539,8 +3543,8 @@
     "libsigcpp-3": {
       "baseline": "3.0.3",
       "port-version": 1
-    }, 
-	"libsmb2": {
+    },
+    "libsmb2": {
       "baseline": "2021-04-29",
       "port-version": 0
     },
