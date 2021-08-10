@@ -1,11 +1,11 @@
 {
-  "name": "azure-storage-blobs-cpp",
-  "version-semver": "12.1.0",
+  "name": "azure-storage-queues-cpp",
+  "version-semver": "12.1.0-beta.1",
   "description": [
-    "Microsoft Azure Storage Blobs SDK for C++",
-    "This library provides Azure Storage Blobs SDK."
+    "Microsoft Azure Storage Queues SDK for C++",
+    "This library provides Azure Storage Queues SDK."
   ],
-  "homepage": "https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-blobs",
+  "homepage": "https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/storage/azure-storage-queues",
   "license": "MIT",
   "dependencies": [
     {
