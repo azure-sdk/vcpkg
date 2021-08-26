@@ -1,6 +1,6 @@
 {
   "name": "azure-template-cpp",
-  "version-semver": "1.0.0-beta.1064040",
+  "version-semver": "1.0.0-beta.1068319",
   "description": [
     "Microsoft Azure Template SDK for C++",
     "This is a template library meant to illustrate initial client library development process for Azure SDK.",
@@ -11,7 +11,8 @@
   "dependencies": [
     {
       "name": "azure-core-cpp",
-      "default-features": false
+      "default-features": false,
+      "version>=": "1.2.0"
     },
     {
       "name": "vcpkg-cmake",
