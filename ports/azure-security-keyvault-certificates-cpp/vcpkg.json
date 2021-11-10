@@ -1,11 +1,11 @@
 {
-  "name": "azure-security-keyvault-secrets-cpp",
+  "name": "azure-security-keyvault-certificates-cpp",
   "version-semver": "4.0.0-beta.2",
   "description": [
-    "Microsoft Azure Key Vault Secrets SDK for C++",
-    "This library provides Azure Key Vault Secrets SDK."
+    "Microsoft Azure Key Vault Certificates SDK for C++",
+    "This library provides Azure Key Vault Certificates SDK."
   ],
-  "homepage": "https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/keyvault/azure-security-keyvault-secrets",
+  "homepage": "https://github.com/Azure/azure-sdk-for-cpp/tree/main/sdk/keyvault/azure-security-keyvault-certificates",
   "license": "MIT",
   "dependencies": [
     {
