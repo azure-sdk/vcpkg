@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-security-keyvault-keys_4.2.0
-    SHA512 b7556019a23344c109f62120c9fc0451f81bf476700ef08c6968a3e731fa783522b2f9b4de411e6727cb1cb977cc4344303e32d825515c192544bb78d9517c32
+    REF 9b4672be9324f218ecdedfe85cae184a59e2e482
+    SHA512 04c46ccd88dd29935f55117d1ce7e6a11bdfe0fc588a9595bea3bc7d4d3d9fa5d2e0739d4d48dcddbbd532063508a05e5f3847ebd40374bb0421b2fa8d5fadb3
 )
 
 vcpkg_cmake_configure(
