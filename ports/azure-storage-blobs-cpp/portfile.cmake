@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-blobs_12.2.1
-    SHA512 7150b1d5c9ceb7ca2f500b3ff1fe45ca2f2769ec895191fa8b0fd0b63e5acc6f8fd58b3aec1b00ba5125d99a5f28c29335f8d13253af7d1d70b1575b98183810
+    REF 2aae6be7a36de2135a11f8c2552eb2d4143f0536
+    SHA512 7f8c651aee171386df1bd69f66269c04c3eccff2c4676b70622a6a6fe17dd039095d83b0af9b8e6690628aee4da02b4448d9ead8c60ff73874a059ffd403d1b6
 )
 
 vcpkg_cmake_configure(
