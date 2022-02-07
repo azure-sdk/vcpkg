@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-core_1.3.1
-    SHA512 affdd6387b5b40f0362d4151f91b1a0f3d0269189240baf981e31a9a1860b77d7fcfeb7819f93f9b1e5764ab1ba2190cf1c6261f23345e0928453550f8537de1
+    REF a97903770abb2cc8b0dbadd53cdb5ec148554b97
+    SHA512 feef09cdfa547b2088515847da6d3a1300102e4379881cae88916164bc156e05152060ebec14ff994b6b9a7feb764c63f2db905cae940e92dd5be112feb19358
 )
 
 vcpkg_check_features(
