@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-security-attestation_1.0.0-beta.2
-    SHA512 5a7e4ef8740f277e388d6d1d75a40723208c1b806ae8b8f7ba9c476259f6c968c08cbd8604321018acf659871b3411aed6be40a041141057978b6bb102338846
+    REF ebe084bfc67c08f6d5aaf857dd7874729d9f5908
+    SHA512 96ed8b5eb3ddb562aa7d112a95594ca9b5aefe13d7c01b77c420c8bac164bd47e685de46ec2df9864c4b6bfe96e74c7c561f3a6b761e9e81cc76dff18807c6d7
 )
 
 vcpkg_cmake_configure(
