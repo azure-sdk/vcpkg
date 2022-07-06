@@ -12,7 +12,6 @@
       "baseline": "3.0.5",
       "port-version": 0
     },
-
     "abseil": {
       "baseline": "20211102.1",
       "port-version": 0
@@ -346,7 +345,7 @@
       "port-version": 0
     },
     "azure-security-attestation-cpp": {
-      "baseline": "1.0.0-beta.3",
+      "baseline": "1.0.0-beta.4",
       "port-version": 0
     },
     "azure-security-keyvault-certificates-cpp": {
