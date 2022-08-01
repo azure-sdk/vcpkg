@@ -1,10 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-core-tracing-opentelemetry_1.0.0-beta.2
-    SHA512 a0697ed440a08f3814013adf476c2a1333b462a2eb96bac18c47939c54686396639935568e229dad6bbbae06f54c324da82544634c6384a2c1498f9959836b6d
-    PATCHES
-        "3844.patch" # https://github.com/Azure/azure-sdk-for-cpp/pull/3844 "Removed hard dependency on opentelemetry version"
+    REF 86b3305b0992aa338229fc75485c3e620bc08849
+    SHA512 50293f536ebb28cf1b2608fcd865a0d88ad8422083f3ca3b49832e059870fe75988f208a35ffc604c0853da9464a33bf8f3cf9100c4280823dec7f52177c2c08
 )
 
 vcpkg_cmake_configure(
