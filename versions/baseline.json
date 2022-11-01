@@ -408,6 +408,10 @@
       "baseline": "12.0.0",
       "port-version": 0
     },
+    "azure-template-cpp": {
+      "baseline": "1.1.0-beta.1959573",
+      "port-version": 0
+    },
     "azure-uamqp-c": {
       "baseline": "2022-09-15",
       "port-version": 0
@@ -6832,6 +6836,10 @@
       "baseline": "1.3.1",
       "port-version": 0
     },
+    "shader-slang": {
+      "baseline": "0.23.13",
+      "port-version": 0
+    },
     "shaderc": {
       "baseline": "2021.1",
       "port-version": 3
@@ -6915,10 +6923,6 @@
     "skyr-url": {
       "baseline": "1.13.0",
       "port-version": 2
-    },
-    "shader-slang": {
-      "baseline": "0.23.13",
-      "port-version": 0
     },
     "sleef": {
       "baseline": "3.5.1",
