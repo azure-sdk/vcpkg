@@ -1,12 +1,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-files-datalake_12.5.0
-    SHA512 fe6b7ffe6efa24c273e3151fdeadb4b981e277bf9aa7b19b23759d5070bfc0c65c365296add83fb4f364b0653a651be31d9ccbd06bfc4c6ac62cf0c5330a66dc
+    REF ba086576be4995a14a6ca3d17aba74374a6ad1ee
+    SHA512 85cd5fef69484aa119693436476a4b87b3ed676fe2a35fbebcea102fe41b7d133c7965639627b6b03ede2256f834eb178314091d2f88ea2aac0108a512566f3b
 )
 
 vcpkg_cmake_configure(
-    SOURCE_PATH ${SOURCE_PATH}/sdk/storage/azure-storage-files-datalake/
+    SOURCE_PATH "${SOURCE_PATH}/sdk/storage/azure-storage-files-datalake/"
     OPTIONS
         -DWARNINGS_AS_ERRORS=OFF
 )
