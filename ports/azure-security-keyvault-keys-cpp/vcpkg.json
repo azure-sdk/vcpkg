@@ -1,6 +1,6 @@
 {
   "name": "azure-security-keyvault-keys-cpp",
-  "version-semver": "4.3.0",
+  "version-semver": "4.4.0-beta.1",
   "description": [
     "Microsoft Azure Key Vault Keys SDK for C++",
     "This library provides Azure Key Vault Keys SDK."
