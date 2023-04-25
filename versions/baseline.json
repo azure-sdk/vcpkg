@@ -457,7 +457,7 @@
       "port-version": 0
     },
     "azure-template-cpp": {
-      "baseline": "1.1.0-beta.2727213",
+      "baseline": "1.1.0-beta.2728087",
       "port-version": 0
     },
     "azure-uamqp-c": {
