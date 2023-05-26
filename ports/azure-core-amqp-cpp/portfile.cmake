@@ -5,17 +5,9 @@ vcpkg_from_github(
     SHA512 527a6457d3c25a1c9bc01d55083627696aa37c1bc677edb0e2926320b9a8e3664b3f3ee7810e8fbe5addcf710d79b87604d362918dcad06b8a668aadb0484988
 )
 
-vcpkg_check_features(
-    OUT_FEATURE_OPTIONS FEATURE_OPTIONS
-    FEATURES
-        curl BUILD_TRANSPORT_CURL
-        winhttp BUILD_TRANSPORT_WINHTTP
-)
-
 vcpkg_cmake_configure(
-    SOURCE_PATH "${SOURCE_PATH}/sdk/core/azure-core/"
+    SOURCE_PATH "${SOURCE_PATH}/sdk/core/azure-core-amqp/"
     OPTIONS
-        ${FEATURE_OPTIONS}
         -DWARNINGS_AS_ERRORS=OFF
 )
 
