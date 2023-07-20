@@ -1,14 +1,15 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-queues_12.0.0
-    SHA512 f393d481a9bb098d1a361605d9d55e1385ec5417a20ea05c53d479dbe4dcb0e8be34c2b9fc31b64e7d78b81fd642461f27beb02b6ed047f87c968c0bb718b85b
+    REF 7d52c01d180ba04cead3d426d902a8d1a31db271
+    SHA512 ed37f60f4001e0631400e6e67f46dcbaa1e8143f3f26545d382ee24e793fab9d532afaeb01b9321f22b8d66d76ba86be6533afe29d8d1e9f5773cc7dc30b6b88
 )
 
 vcpkg_cmake_configure(
-    SOURCE_PATH ${SOURCE_PATH}/sdk/storage/azure-storage-queues/
+    SOURCE_PATH "${SOURCE_PATH}/sdk/storage/azure-storage-queues/"
     OPTIONS
         -DWARNINGS_AS_ERRORS=OFF
+        -DBUILD_TESTING=OFF
 )
 
 vcpkg_cmake_install()
