@@ -1,6 +1,6 @@
 {
   "name": "azure-identity-cpp",
-  "version-semver": "1.5.1",
+  "version-semver": "1.6.0-beta.2",
   "description": [
     "Microsoft Azure Identity SDK for C++",
     "This library provides common authentication-related abstractions for Azure SDK."
@@ -13,7 +13,10 @@
       "default-features": false,
       "version>=": "1.9.0"
     },
-    "openssl",
+    {
+      "name": "openssl",
+      "platform": "!windows & !uwp"
+    },
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -21,6 +24,10 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
+    },
+    {
+      "name": "wil",
+      "platform": "windows"
     }
   ]
 }
