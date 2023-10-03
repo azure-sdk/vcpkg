@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-identity_1.5.1
-    SHA512 f3e12c0685ec7a1cde724feafbc84a8aa66688ed7b54bb9c4787d516aee3142310863013a5d49869e1a1e64af8f5ce908640fee64190bc9c2f9715e3afa833bc
+    REF be478542fba6091385afb2c1791eafcecf8b1ad7
+    SHA512 441e7f7f89ad80bd3e8ce6d45a2e0113bc4215a9c0bae65dce1b2b6207cbe5797e3d70d7aa71f3293abb9eddd578ccdfaac4a2d0d4b45d086f6cb96db76be476
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/identity/azure-identity")
