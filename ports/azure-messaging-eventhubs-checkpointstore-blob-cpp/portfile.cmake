@@ -5,12 +5,12 @@ vcpkg_from_github(
     SHA512 8aa14e8ab140d2b3e8ad1599253d8c8b11c3b742bbc4cca79a4c060fbea7084fabfeac56252bd747e52472d7eaf1049e2d1b5653fd7b2c098e886a766ae10584
 )
 
-if(EXISTS "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs")
+if(EXISTS "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs-checkpointstore-blob")
   file(REMOVE_RECURSE "${SOURCE_PATH}/sdk/eventhubs/_")
   file(REMOVE_RECURSE "${SOURCE_PATH}/sdk/_")
   file(REMOVE_RECURSE "${SOURCE_PATH}/_")
 
-  file(RENAME "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs" "${SOURCE_PATH}/sdk/eventhubs/_")
+  file(RENAME "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs-checkpointstore-blob" "${SOURCE_PATH}/sdk/eventhubs/_")
   file(RENAME "${SOURCE_PATH}/sdk/eventhubs" "${SOURCE_PATH}/sdk/_")
   file(RENAME "${SOURCE_PATH}/sdk" "${SOURCE_PATH}/_")
 endif()
