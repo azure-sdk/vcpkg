@@ -1,8 +1,11 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-core-amqp_1.0.0-beta.4
-    SHA512 c8bc1e73e8f2a31ace636a5193e4909d1f673efb5f62c5cb27dbbe379ad77387bfecd862efb635c335044a6e7e1726a0ba39fba8713d97b0e80e239f9d92e3a7
+    REF ab0c28a42ff5a9dee03f46211c0391ab5ef5e573
+    SHA512 d32894279a9a57eae0bafe5b36b28693a4d28f904481c5ab2b59ba29d023b8e370819ae2e245314508585f732a2b926b386fdbaf1ffcc3dcddbac8fd0dd79db4
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/core/azure-core-amqp")
