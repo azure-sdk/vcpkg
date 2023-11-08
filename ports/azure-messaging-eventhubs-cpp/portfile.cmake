@@ -1,8 +1,11 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-messaging-eventhubs_1.0.0-beta.3
-    SHA512 0ad0e02755eba07408c6a837a742c0e58890a4b5f281709e1d84ea59a378c0a013068428d99e81d4972172760a3fb55a6026d34d8a558a5747c48a6b3f85e664
+    REF e94719131d2ba0e24327f838b74e153af692a46c
+    SHA512 0b6c77494af59c171c93ebaf6be5933ad6d833db95a6ebe8e3d545f0627d9c506c8f7d43accd49b8bba788f321a6b3ac2ffb923d2d8279f455780a9321d0bc9e
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs")
