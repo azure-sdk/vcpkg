@@ -1,8 +1,11 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-identity_1.5.1
-    SHA512 f3e12c0685ec7a1cde724feafbc84a8aa66688ed7b54bb9c4787d516aee3142310863013a5d49869e1a1e64af8f5ce908640fee64190bc9c2f9715e3afa833bc
+    REF 083d52aefccdaa721a96cc9b9537f727126f8b70
+    SHA512 2b18a55437c6e06827259ee92e7ff168551de446e2f552587b9c84cc34234ffec2468f9f1e2a6c6d6084477e7dcd00eeb7457990a302d4925d34ddb79fc47987
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/identity/azure-identity")
