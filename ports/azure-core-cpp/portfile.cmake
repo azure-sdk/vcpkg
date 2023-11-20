@@ -1,10 +1,11 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-core_1.10.3
-    SHA512 b3705cf757a14693f65a5ea4a43cc3c5f8377b3156ef24869bd664e9e8b25797fd21107ad543db476335bbb2389687cc1ed8fb8fe1010bb9b5a0eb406f3c0d59
-    PATCHES
-        fix_gcc13.patch
+    REF 1b2e58f7437f93324e5b4a56a5c04625d867f7a4
+    SHA512 470d321c1d56bd422988a86a252d9807dcaea9512c0d6105fe214bfe5b0a451df5c2aa5a5123045d7f431c1f83208216be4a8b6d0151c87533a07f4a3794f8b2
 )
 
 vcpkg_check_features(
