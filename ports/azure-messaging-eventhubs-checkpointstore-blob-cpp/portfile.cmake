@@ -1,8 +1,11 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-messaging-eventhubs-checkpointstore-blob_1.0.0-beta.1
-    SHA512 7c55eda0c04bbc57729a7b479d8d5874b0e06927aff1916833520a3a944e63b6fceabd3565fd91549ec00157f2c4af5a87a6a2db55a5c24df611cd96572f9a08
+    REF 818d22778f8c0542451fcb095d8a1d4bb40acdb3
+    SHA512 19a63fa58eaea656c9e23d10e0de18de57ffc1ea6a73596ed538e9a50ad7b3e631470eb64e8a66bbc8b0b1615712795cc70c137692e376a6f1812f3cb884a78f
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs-checkpointstore-blob")
