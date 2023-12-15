@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-queues_12.2.0
-    SHA512 ce0a89e3ae5e49f495904a614615906119ba09606ac2e781aae59cf2f4a00e6d4afe9bdd9675ec4cc59b50b47b5123a6333f125871df42db5d6554d341132676
+    REF eba15a9ff4c8c6685dd0f5b7ced90ad75154ffae
+    SHA512 ff047c6190988c06dbff32081446cb90bedd4315a5ca12c260225b97813234549fa582ac95ce9ef5088261b8f8bcc4b9346617692211ea46278531ef790a2c15
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/storage/azure-storage-queues")
