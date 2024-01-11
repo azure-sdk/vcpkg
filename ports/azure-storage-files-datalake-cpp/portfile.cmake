@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-files-datalake_12.9.0
-    SHA512 3314adc2c43b54f3bb776b099876062dc157cb35215c8efb49c1d23474479601ab0c067f901809c9ee4bce646feabf0065e8e8b96ae77f4d0f8585e8e269294b
+    REF 23af33186e4ad70a0b2de06a234a6aa55cf14d2b
+    SHA512 186ca276098122f7c3ec96e5c656debee711b5c691f94a97e1faa29f5777f233411c696845f6d08f881951e85aa0505b06d3dd8c84649d46ec71dada23dae20e
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/storage/azure-storage-files-datalake")
