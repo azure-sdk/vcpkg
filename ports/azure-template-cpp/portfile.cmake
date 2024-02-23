@@ -1,0 +1,32 @@
+# NOTE: All changes made to this file will get overwritten by the next port release.
+# Please contribute your changes to https://github.com/Azure/azure-sdk-for-cpp.
+
+vcpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO Azure/azure-sdk-for-cpp
+    REF 300e518eedc576364ec582dbecef5536c0c4057a
+    SHA512 3c8451491fbacde94a11a5c5222fe6e41380d121293f290b0def58ed22512c9811849ff488f519fd66ca33f1b5205b749667773c87d6a251431d8c50c06b8ffb
+)
+
+if(EXISTS "${SOURCE_PATH}/sdk/template/azure-template")
+  file(REMOVE_RECURSE "${SOURCE_PATH}/sdk/template/_")
+  file(REMOVE_RECURSE "${SOURCE_PATH}/sdk/_")
+  file(REMOVE_RECURSE "${SOURCE_PATH}/_")
+
+  file(RENAME "${SOURCE_PATH}/sdk/template/azure-template" "${SOURCE_PATH}/sdk/template/_")
+  file(RENAME "${SOURCE_PATH}/sdk/template" "${SOURCE_PATH}/sdk/_")
+  file(RENAME "${SOURCE_PATH}/sdk" "${SOURCE_PATH}/_")
+endif()
+
+vcpkg_cmake_configure(
+    SOURCE_PATH "${SOURCE_PATH}/_/_/_"
+    OPTIONS
+        -DWARNINGS_AS_ERRORS=OFF
+        -DBUILD_TESTING=OFF
+)
+
+vcpkg_cmake_install()
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+vcpkg_cmake_config_fixup()
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
+vcpkg_copy_pdbs()
