@@ -1,0 +1,7 @@
+Source: arabica
+Version: 2020-April
+Homepage: https://github.com/jezhiggins/arabica
+Description: Arabica is an XML and HTML processing toolkit, providing SAX2, DOM, XPath, and XSLT implementations, written in Standard C++.
+Build-Depends: boost-mpl, boost-type-traits, boost-spirit, boost-function, boost-bind, boost-smart-ptr, boost-lexical-cast, winsock2 (windows)
+
+

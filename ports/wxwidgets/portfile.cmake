@@ -22,8 +22,11 @@ vcpkg_check_features(
         secretstore wxUSE_SECRETSTORE
         sound   wxUSE_SOUND
         webview wxUSE_WEBVIEW
-        webview wxUSE_WEBVIEW_EDGE
 )
+
+if (VCPKG_TARGET_IS_WINDOWS AND "webview" IN_LIST FEATURES)
+    list(APPEND FEATURE_OPTIONS "-DwxUSE_WEBVIEW_EDGE=ON")
+endif()
 
 set(OPTIONS_RELEASE "")
 if(NOT "debug-support" IN_LIST FEATURES)

@@ -1,0 +1,9 @@
+{
+  "name": "wasmer",
+  "version-string": "1.0.2",
+  "homepage": "https://github.com/wasmerio/wasmer",
+  "description": "The leading WebAssembly Runtime supporting WASI and Emscripten",
+  "dependencies": []
+
+  
+}

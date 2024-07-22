@@ -9,5 +9,26 @@
       "name": "vcpkg-cmake",
       "host": true
     }
-  ]
+  ],
+  "features": {
+    "asio": {
+      "description": "High level HTTP/2 C++ library",
+      "dependencies": [
+        "boost-asio",
+        {
+          "name": "nghttp2",
+          "default-features": false,
+          "features": [
+            "openssl"
+          ]
+        }
+      ]
+    },
+    "openssl": {
+      "description": "SSL support (OpenSSL)",
+      "dependencies": [
+        "openssl"
+      ]
+    }
+  }
 }
