@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-messaging-eventhubs-checkpointstore-blob_${VERSION}"
-    SHA512 7c55eda0c04bbc57729a7b479d8d5874b0e06927aff1916833520a3a944e63b6fceabd3565fd91549ec00157f2c4af5a87a6a2db55a5c24df611cd96572f9a08
+    REF d74b08f8b37a44e31d8fa0e62ff0d62ce6e62cd0
+    SHA512 a2d31d454b532413b0325f9b7dad2d6faa9eb8c2c676b85a8b6cda3cf82d64dd13b20ed1bad0b07c4a42b4174fe12a17151c024723addb14eedeaad4b2b96255
     HEAD_REF main
 )
 
