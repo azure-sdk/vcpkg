@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core-tracing-opentelemetry_${VERSION}"
-    SHA512 645c616fe54024f30a6e4b9c2626bfeaf906086be7bbeccc4a1155178670fb70d9818938db2f9fa8e3b9593ca45e0b10042dcd67fde04d2542f6f72a74884697
+    REF bc9aaa43cfa2a61c467d09fde0b4d687215a42c3
+    SHA512 1d1d43be6263d0115c45b2db4e42e9816e31ab37ebfb9ff8fb9fed1d2045582263809c38d72560a96901d531beed7b89796e9120e9551781e39b25565fc89dc6
     HEAD_REF main
 )
 
