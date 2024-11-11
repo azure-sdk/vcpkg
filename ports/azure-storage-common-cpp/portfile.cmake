@@ -4,11 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-storage-common_${VERSION}"
-    SHA512 2b82ff3e8d4e76c1c7205d363e2e9ff042cf4034c41a0bc7d47591a42c144b09ad6f732ea322ce0c918bcf5de548c88c58a577571182d988b85a4418c51d9f59
+    REF d2bdf925e9e98331dcc002abea4e86fecb6f7b9f
+    SHA512 e0f35b70989b6f3d6126ad6b230dab1c2d51f7cc21556d8ce313cc83234e5e2d983a2555ca43e1f488fa23ce6cf3705036d807e78a9c31fc8b94454ac096456a
     HEAD_REF main
-    PATCHES
-      set_version.patch
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/storage/azure-storage-common")
