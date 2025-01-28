@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-messaging-eventhubs_${VERSION}"
-    SHA512 13f1ad09a4093ab3a591208e47d6ce5daad2a4e055f2c86fdb49a9dbee4826efb19ddb294c0d5d9a4e5f4e2318059bd57fc346fec5ae1cee26f20839030f4276
+    REF c95362ac9dd99617ad4860e2440da3107d849527
+    SHA512 e9d71ec4b35a353463e46f656e911df31d6cec0f53f8e855ed7a422f2d629ca359497ceaf013143143d786632f27825f94c5c2b6ee3a8e2150d670d81431be91
     HEAD_REF main
 )
 
