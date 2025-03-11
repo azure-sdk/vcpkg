@@ -4,11 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-security-keyvault-administration_${VERSION}"
-    SHA512 075364958d05b4eace3babbcc700706a02f2125577d3f903ef4ca2cc71245a45963ca5ac82f1e9bd3903c799d3c44846741802cbd917bbc8f65a92d047caf7ef
+    REF e37c433672bbfe8c73c69beab10a034f64fc67f3
+    SHA512 8a23a59e4c8dd719928f2cf9b5392166b8d78e6d7eadc5636044541bd6be78117d6f35a5d368e9e9343f649cc32990964d160919ff9a0eeda8d084d6552abf6b
     HEAD_REF main
-    PATCHES
-      set_version.patch
 )
 
 if(EXISTS "${SOURCE_PATH}/sdk/keyvault/azure-security-keyvault-administration")
