@@ -4,11 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core_${VERSION}"
-    SHA512 30b949e1154674b474287a4b36a29270d9fdd7a1f5b43d2507859f0a75176821a98c9a700665b513cc5e36a8089d48d614838ed0f900f42ef5c87dd92f2805b6
+    REF 88400ee2057b71b97b9832f40285c2769fb145d7
+    SHA512 38ab1d83a4629d3c1cf5e1f74e827a28e6bd807a2d5eee339c147258ccd60791cbccdebb553879a25bb0807e624f457c96d3b6d643d1d49e6d42f5bc0ec9beab
     HEAD_REF main
-    PATCHES
-        dt_android.patch
 )
 
 vcpkg_check_features(
