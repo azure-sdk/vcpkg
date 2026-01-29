@@ -4,11 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core-amqp_${VERSION}"
-    SHA512 92d5648b832c38587c2ceccaf3293252a7f5b976df7f57fc475b8fcd396ba3bb7fd2c18e46b3b06f6c8776aed6df1c4a36ef2b8bc5f07f1f23c771ff476a7af7
+    REF cb464798dd37d3f7ac4815db01cba957682ae021
+    SHA512 5f4728913fab2e72e3d671ed910ba24cda2972294a76a7244a4a6f9190cfbe595f6a6073ac741f24a1c893dd6b3cd58be494422c386055bc504309927dca438a
     HEAD_REF main
-    PATCHES
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
@@ -29,6 +27,7 @@ vcpkg_cmake_configure(
     OPTIONS
         -DWARNINGS_AS_ERRORS=OFF
         -DBUILD_TESTING=OFF
+        -DDISABLE_RUST_IN_BUILD=ON
 )
 
 vcpkg_cmake_install()
