@@ -4,12 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-security-keyvault-secrets_${VERSION}"
-    SHA512 8d944bbcc29b670b884234a789455bb6b33e33fa45c7b02a4200c2267189597cb849f3cbbaa5f7c4db013ec74a2ea0b073237254db7fcac96c290888c05dcba5
+    REF 2dbdbc5b4e74c505ee643f3bf255197ee5a50c2a
+    SHA512 1e39cd531cbe1ff2f8261987ebe901c4aa2500109dc0c79f360c4f970302ffe060ea0e1498bf64af00fe6026ee774ee4d9217d1389ed65a7f63a698a4410fcd1
     HEAD_REF main
-    PATCHES
-      useragent.patch
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
