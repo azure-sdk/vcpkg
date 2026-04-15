@@ -4,12 +4,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-messaging-eventhubs-checkpointstore-blob_${VERSION}"
-    SHA512 7c55eda0c04bbc57729a7b479d8d5874b0e06927aff1916833520a3a944e63b6fceabd3565fd91549ec00157f2c4af5a87a6a2db55a5c24df611cd96572f9a08
+    REF 69e0ee1d555e5a010f6a332e4daf959215ce49f0
+    SHA512 21e723569aeecc8659436e0132e19bb1b0b7ea31a6e6022c2d821d52f6d47f7192648bc6151ef0277b17ad2cc20b2d6de4d5a9999dc3dc5a3b18e70e8163d3a7
     HEAD_REF main
-    PATCHES
-      useragent.patch
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
