@@ -4,20 +4,18 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core-amqp_${VERSION}"
-    SHA512 92d5648b832c38587c2ceccaf3293252a7f5b976df7f57fc475b8fcd396ba3bb7fd2c18e46b3b06f6c8776aed6df1c4a36ef2b8bc5f07f1f23c771ff476a7af7
+    REF 0ee641c06285b9b95e4beed43d55cc5d1cea7a05
+    SHA512 7132c87dceb99b66c33608ac573d8cbda11c25789365d0e20d1bbfa1d6ec1c8ea8a5ec7afe88799ebc763621c7944b1a92ae8bdd6861fce874b08900d99bb306
     HEAD_REF main
-    PATCHES
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/core/azure-core-amqp")
@@ -35,6 +33,7 @@ vcpkg_cmake_configure(
     OPTIONS
         -DWARNINGS_AS_ERRORS=OFF
         -DBUILD_TESTING=OFF
+        -DDISABLE_RUST_IN_BUILD=ON
 )
 
 vcpkg_cmake_install()
