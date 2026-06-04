@@ -4,18 +4,18 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-storage-blobs_${VERSION}"
-    SHA512 fe5a6b7abab159bae60a8ed1c45f3393418f4bd561f298c26f2c7a146323ab44a9e6369ac176cfa5d086f23df689b05decee5a8bf272aad28309bc0eea6f9174
+    REF d71f3a426aa9f22eb5efa3ae87e3cb02f8ea0291
+    SHA512 2ac70f870a78ccd576ed2f90f7fa09215ea114eff7580bde9e4b78bee1bfede4abf5638704a37b0e8b074d0706b070128efba99eda0aaf766ec2f84a6e4479ab
     HEAD_REF main
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/storage/azure-storage-blobs")
