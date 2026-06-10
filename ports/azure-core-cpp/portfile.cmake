@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core_${VERSION}"
-    SHA512 ba7b9d6227850bc05297ff2c1b51310ceca6b903414c14ad8d7396e803c4b80833f915f4a4654113b009ad37957fe35b3389856ab2b03d94f7b0b4b334330437
+    REF a376b10f09cb222f832ed166fefb128a785ddb19
+    SHA512 769ec3c5bca7f450ffd7d6f21236f8ff42d1d4656a9ed8a6dd5a5a785c5ee534a8d844e3b3403310dde6d3f156cc9df03ba976d6dd4a3baa84998d7cf5e508d2
     HEAD_REF main
 )
 
@@ -19,10 +19,10 @@ vcpkg_check_features(
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/core/azure-core")
