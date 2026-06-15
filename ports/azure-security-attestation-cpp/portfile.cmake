@@ -4,23 +4,18 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-security-attestation_${VERSION}"
-    SHA512 bf5c0ab830122838045e3e5ff03aae38f81082b50b9b0c61fa21a8c101a2fd98ad98b136d49702665d720f59baa6a89c8af3f161a44c09d24ad747fb1828cbca
+    REF 6649434b44b5aece325d1d6e6eba376c09c8e1a2
+    SHA512 4826062318d95522115d8eb94f61437aed4897deefe01062baad200051f9fdc2ef2a772bfd087d3a9a0eae64704aba4d40d66dc4a63c3ecc450d1f5d9fb7b99d
     HEAD_REF main
-    PATCHES
-        context_syntax.patch
-        useragent.patch
-        set_version.patch
-        cstdint.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/attestation/azure-security-attestation")
