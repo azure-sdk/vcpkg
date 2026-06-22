@@ -4,21 +4,18 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core-tracing-opentelemetry_${VERSION}"
-    SHA512 645c616fe54024f30a6e4b9c2626bfeaf906086be7bbeccc4a1155178670fb70d9818938db2f9fa8e3b9593ca45e0b10042dcd67fde04d2542f6f72a74884697
+    REF e9f2fa39b73496fd6a33d1e6b4a5c1cf325b3a2c
+    SHA512 a546dfc9ebd348cec7e12290a4d3c48239897d6fdcdba5f99a7608cde24b6514f28a300ae891efd312df68f19efab7942fd3251ba3874e8bd7cada0bc5b979a3
     HEAD_REF main
-    PATCHES
-      useragent.patch
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/core/azure-core-tracing-opentelemetry")
