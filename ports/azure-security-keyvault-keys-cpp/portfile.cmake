@@ -4,21 +4,18 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-security-keyvault-keys_${VERSION}"
-    SHA512 758ff05ce33672d81cf14d347edada2a7c008c7df61639b7bac9ce1a1114144a1f6fcc3d364d1d90f5f9cda8f8c1db14f80873403d4190d4aca1844fb25dd517
+    REF c24a4025ce409c739fc27dca6c4e76b1a1d51317
+    SHA512 01c7a0dda4970125ffabcd161defbb2f9fc0ab1b230c96b6720ed09f2f3b00c0e48eb9c6f5d045f18dc36a84b4d29a9416aa34553e8460506f2d28049acf8c2c
     HEAD_REF main
-    PATCHES
-      useragent.patch
-      set_version.patch
 )
 
 file(GLOB_RECURSE unused "${SOURCE_PATH}/cgmanifest.json")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.toml")
 file(REMOVE_RECURSE ${unused})
 
-file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")  
+file(GLOB_RECURSE unused "${SOURCE_PATH}/Cargo.lock")
 file(REMOVE_RECURSE ${unused})
 
 if(EXISTS "${SOURCE_PATH}/sdk/keyvault/azure-security-keyvault-keys")
