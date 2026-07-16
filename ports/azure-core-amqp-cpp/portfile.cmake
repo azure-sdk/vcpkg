@@ -4,8 +4,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO Azure/azure-sdk-for-cpp
-    REF "azure-core-amqp_${VERSION}"
-    SHA512 3335ebaa25054c4ceaf8a42fc9196ba18e292e3c5f1c317a2750ba71553c4a35ed89805ea271c61fee7d7ead7dd15b3a06a77fcf7e2fb4f6e86201fac23286a0
+    REF c24a4025ce409c739fc27dca6c4e76b1a1d51317
+    SHA512 01c7a0dda4970125ffabcd161defbb2f9fc0ab1b230c96b6720ed09f2f3b00c0e48eb9c6f5d045f18dc36a84b4d29a9416aa34553e8460506f2d28049acf8c2c
     HEAD_REF main
 )
 
